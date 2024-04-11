@@ -58,64 +58,42 @@ Examine the data structure.
 # Summary of the overall structure of  movie_dataframe
 The data summary confirms this is a pandas dataframe. The combined dataframe has 1767 entries within 10 columns. There is no indication of missing data. dtypes: float64(4), int64(2), object(4)
 memory usage: 151.9+ KB
-
 # To address the business inquiry and provide actionable insights:
 1.  Analysis will entail movie genres as a predictor of  sales, average rating, and runtime.
 2. Investigate the relationship between movie length (runtime), average rating, and sales across different market segments
 3. Explore how movie length(runtime) correlates with  sales.
 4. Assess geographical market segmentation, aligning with the company's areas of interest.
-
 # Drop unnecessary columns
 movie_db.drop(['start_year' ,'movieID', 'studio'], axis=1, inplace=True)
-# Feature Engineering   Global Sales
+# Feature Engineering Global Sales
 To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
-
 # Descriptive statistics
 I will generate statistics that summarize the data concisely, and evaluate different ways to visualize data.
-#  Findings Central Tendencies 
+ ### Findings Central Tendencies 
 ## runtime_minutes:
-Mean: 107.90 minutes
-Median (50th Percentile): 106 minutes
-Minimum: 3 minutes
-Maximum: 272 minutes
+Mean: 107.90 minutes, Median (50th Percentile): 106 minutes, Minimum: 3 minutes, Maximum: 272 minutes
 ## averagerating:
-Mean: 6.46
-Median (50th Percentile): 6.5
-Minimum: 1.6
-Maximum: 9.2
+Mean: 6.46, Median (50th Percentile): 6.5, Minimum: 1.6,  Maximum: 9.2
 ## domestic_gross:
-Mean: $50,081,030
-Median (50th Percentile): $21,100,000
-Minimum: $400
-Maximum: $700,100,000
+Mean: $50,081,030, Median (50th Percentile): $21,100,000, Minimum: $400, Maximum: $700,100,000
 ## foreign_gross:
-Mean: $79,595,820
-Median (50th Percentile): $21,500,000
-Minimum: $600
-Maximum: $946,400,000
+Mean: $79,595,820, Median (50th Percentile): $21,500,000, Minimum: $600, Maximum: $946,400,000
 ## global_sales:
-Mean: $129,676,800
-Median (50th Percentile): $48,400,000
-Minimum: $10,800
-Maximum: $1,405,400,000
+Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Maximum: $1,405,400,000
+# Analyzing the Data and Building Visualizations
 
-# Analyzing the data and building visualizations
-
- # Group by year Market Performance through the years
+ ## Market Performance through the years:Group by year
 Group the movies by year, organizing them based on global sales categories.
-
-
 
 # Create visualization
 ![alt text](image-1.png)
 
-# Findings: 
+Findings: 
 The findings reveal that between 2010 and 2018, there was a decline in the quantity of movies produced.
 Simultaneously, both foreign and global sales experienced significant upward trends, whereas domestic sales showed a moderate increase. This suggests an inverse relationship between the variables during the specified period. 
 
-#  Analysis of Genres
-Genre analysis involves grouping genres to examine their relationships with other variables in the dataset, such as average rating, movie length, and sales. By categorizing genres based on these factors, I obtained gainful insights into their interrelationships and their impact on various aspects of the dataset
-
+## Analysis of Genres
+Genre analysis involves grouping genres to examine their relationships with other variables in the dataset, such as average rating, movie length, and sales. By categorizing genres based on these factors, I obtained gainful insights into their interrelationships and their impact on various aspects of the dataset.
 There are 260 different genres in the dataset.To  identify the genre that appears most frequently the mode of the 'genres' column in the movie_db dataset is determined  to be "Drama"
 
 # Top rating genre 
@@ -123,7 +101,7 @@ There are 260 different genres in the dataset.To  identify the genre that appear
 ![png](output_57_0.png)
     
 
-# Findings
+#Findings
 
 The analysis revealed the average ratings for each genre group. Notably, genres such as "Adventure", "Action, Sport", and "Drama, Western" emerged as the top-ranking genres with the highest average ratings.
 
