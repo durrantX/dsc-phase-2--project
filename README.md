@@ -36,20 +36,15 @@ Data from IMDB is located in a SQLite database will be imported first.To address
 The data summary confirms this is a pandas dataframe. The dataframe has 146143 entries within 6 columns. Indication of missing data in 3 of the columns. Decisions regarding handling of such is taken during data cleaning.
 dtypes: float64(2), int64(1), object(3) memory usage: 6.7+ MB
 
-
-
-### Explore and examine  data
-
+### Explore and examine BOM  data
 ### Summary of the overall structure of  bom_movie dataframe
 The data summary confirms this is a pandas dataframe. The dataframe has 3387 entries within 5 columns Indication of missing data in 3 of the columns. Decisions regarding handling of such is taken during data cleaning. dtypes: float64(1), int64(1), object(3). 
 foreign_gross is an object data type and requres a change to float.
-
-# Data cleaning 
-# Handling Inconsistent Data:
+# Data Cleaning 
+## Handling Inconsistent Data:
 Address typos, variations in capitalization, and naming conventions
 ## Data Type Conversion
 1.Change foreign_gross to float dtype
-
 # Merge Databases  for Analysis
 To conduct a thorough analysis, I will merge the IMDB and BOM databases. This integration will enable a comprehensive examination of the data.
 # Explore and examine the Merged dataset movie_db
@@ -67,9 +62,9 @@ memory usage: 151.9+ KB
 movie_db.drop(['start_year' ,'movieID', 'studio'], axis=1, inplace=True)
 # Feature Engineering Global Sales
 To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
-# Descriptive statistics
+# Descriptive Statistics
 I will generate statistics that summarize the data concisely, and evaluate different ways to visualize data.
- ### Findings Central Tendencies 
+ ## Findings Central Tendencies 
 ## runtime_minutes:
 Mean: 107.90 minutes, Median (50th Percentile): 106 minutes, Minimum: 3 minutes, Maximum: 272 minutes
 ## averagerating:
@@ -81,7 +76,6 @@ Mean: $79,595,820, Median (50th Percentile): $21,500,000, Minimum: $600, Maximum
 ## global_sales:
 Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Maximum: $1,405,400,000
 # Analyzing the Data and Building Visualizations
-
  ## Market Performance through the years:Group by year
 Group the movies by year, organizing them based on global sales categories.
 
