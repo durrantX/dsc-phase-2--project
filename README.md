@@ -127,15 +127,12 @@ Among the various movie lengths observed, movies with a runtime of 59 minutes ge
     
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/7ea4276a-4752-4b5b-b3a6-e0577909790f)
      
-### Top movie length average rating
+### Top movie runtimes and the movie average rating
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/abcdca37-28c7-4873-a33f-1a45d76bdf10)
     
 Findings
 Analysis of the average movie length and average showed that movie length of 192 enjoyed the highest rating folllowed by 45 and 47 minutes. 
-
-### Visualize the relationship between the movie runtimes and the movie average rating
-    
-![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/dd5d4c25-6405-482a-87d8-012259735227)    
+   
 ### Visualize the relationship between the movie average rating and the movie sales
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/084f80bc-f654-4daa-a8db-9293836f1127)
