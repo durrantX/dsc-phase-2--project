@@ -110,7 +110,7 @@ Findings
 Determining the mean runtime duration for each category of genres, indicated that the top three genres with the lengthiest average runtimes are "Drama, Western," "Adventure, Drama, Sci-Fi," and "Drama, History, Sports."
 Conversely, genres exhibiting the shortest average durations include "Action, Sport", "Adventure, Comedy, Horror," and "Documentary, News".
 
-# Examination of Movie Duration (runtime_minutes)
+## Examination of Movie Duration (runtime_minutes)
 The runtime_minutes variable will be scrutinized to explore the correlation between movie duration and average rating, as well as the relationship between movie duration and sales across various markets.
 ### Movie length market performanace 
 
