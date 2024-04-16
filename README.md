@@ -121,7 +121,7 @@ Among the various movie lengths observed, movies with a runtime of 59 minutes ge
 
 # Visualize the relationship between the movie length  and the  global sales  using scatter plots
     
-![png](output_72_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/7ea4276a-4752-4b5b-b3a6-e0577909790f)
      
 ### Top movie length average rating
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/abcdca37-28c7-4873-a33f-1a45d76bdf10)
