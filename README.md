@@ -119,7 +119,7 @@ The runtime_minutes variable will be scrutinized to explore the correlation betw
 Findings 
 Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $8.5B. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
 
-# Visualize the relationship between the movie length  and the  global sales  using scatter plots
+### Visualize the relationship between the movie length and the global sales using scatter plots
     
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/7ea4276a-4752-4b5b-b3a6-e0577909790f)
      
@@ -131,18 +131,9 @@ Analysis of the average movie length and average showed that movie length of 192
 
 ### Visualize the relationship between the movie runtimes and the movie average rating
     
-![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/dd5d4c25-6405-482a-87d8-012259735227)
-    
-# Findings
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/dd5d4c25-6405-482a-87d8-012259735227)    
+### Visualize the relationship between the movie average rating and the movie sales
 
-# Movie length market performanace 
- 
-![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/c1c24562-c308-4ec0-930b-018e01aedf51)
-
-    
-# Visualize the relationship between the movie average rating and the movie sales
-
-    
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/084f80bc-f654-4daa-a8db-9293836f1127)
     
 # Correlation Analysis
