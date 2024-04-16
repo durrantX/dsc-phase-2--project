@@ -47,7 +47,7 @@ Examine the data structure.
 ### Summary of the overall structure of  movie_dataframe
 The data summary confirms this is a pandas dataframe. The combined dataframe has 1767 entries within 10 columns. There is no indication of missing data. dtypes: float64(4), int64(2), object(4)
 memory usage: 151.9+ KB
-# To address the business inquiry and provide actionable insights:
+## To address the business inquiry and provide actionable insights:
 1.  Analysis will entail movie genres as a predictor of  sales, average rating, and runtime.
 2. Investigate the relationship between movie length (runtime), average rating, and sales across different market segments
 3. Explore how movie length(runtime) correlates with  sales.
@@ -65,7 +65,7 @@ domestic_gross-Mean: $50,081,030, Median (50th Percentile): $21,100,000, Minimum
 foreign_gross-Mean: $79,595,820, Median (50th Percentile): $21,500,000, Minimum: $600, Maximum: $946,400,000
 global_sales-Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Maximum: $1,405,400,000
 # Analyzing the Data and Building Visualizations
- ## Market Performance through the years: Groupby year
+ ## Market performance through the years: Groupby year
 Group the movies by year, organizing them based on global sales categories.
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/29e7490c-6d1e-4e72-9b17-674d3981a623)
 Findings: 
@@ -165,7 +165,6 @@ As previous  analysis above indicates, the length of the movie has a realtionshi
 
 # Runtime as the predictor of domestic sales
     
-
 Findings 
  The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted doemestic sales.
 Coefficients:
@@ -178,10 +177,8 @@ Adjusted R-squared: 0.024.
 R-squared is 0.025, indicating that approximately 2.5 percent of the variance in domestic gross is explained by the predictor variable (runtime_minutes).
 F-statistic: 44.97 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
 Overall the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their domestic gross. However, the R-squared value indicates that the model explains only a small proportion of the variance in domestic gross, suggesting that other factors not included in the model is  influencing domestic gross.
-
-
-
-# movie ratings(averagerating) significantly predicted global sales
+ 
+# OLS with movie ratings(averagerating) as the predictor and global sales as dependent variable
 The ordinary least square  regression was used to test if  movie ratings(averagerating) significantly predicted global sales
 Coefficients:
 The intercept (const) is  --1.037e+08 
