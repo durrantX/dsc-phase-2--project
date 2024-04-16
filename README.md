@@ -160,12 +160,9 @@ Approximately 3.6 percent of the variability in global sales can be explained by
 
 Overall, the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their global sales. However, the low R-squared value indicates that the model explains only a small portion of the variance in gross sales, suggesting that other factors not included in the model may also influence  global sales.
 
- Run a Simple Linear Regression with runtime  as the Predictor and domestic sales as dependent variable 
+ # Run a Simple Linear Regression with runtime  as the Predictor and domestic sales as dependent variable 
 
-As previous  analysis above indicates, the length of the movie has a realtionship with sales.  Analysis delves further   quantifying the strength of the relationship in the domestic and foreign market. 
-
-# Runtime as the predictor of domestic sales
-    
+As previous  analysis above indicates, the length of the movie has a realtionship with sales.  Analysis delves further   quantifying the strength of the relationship in the domestic and foreign market.     
 ### Findings 
  The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted doemestic sales.
 Coefficients:
