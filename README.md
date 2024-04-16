@@ -74,7 +74,7 @@ Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Max
 Group the movies by year, organizing them based on global sales categories.
 
 # Create visualization
-![png](image-7.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/29e7490c-6d1e-4e72-9b17-674d3981a623)
 Findings: 
 The findings reveal that between 2010 and 2018, there was a decline in the quantity of movies produced.
 Simultaneously, both foreign and global sales experienced significant upward trends, whereas domestic sales showed a moderate increase. This suggests an inverse relationship between the variables during the specified period. 
