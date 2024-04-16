@@ -85,7 +85,7 @@ There are 260 different genres in the dataset.To  identify the genre that appear
 
 # Top rating genre 
 
-![png](output_57_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/eaf6a16a-5983-4e3a-bfb1-b00a2f9db9bd)
     
 
 #Findings
@@ -94,7 +94,7 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 
 # Market performance categorized by genres 
   
-![png](output_61_1.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
     
 # Findings
 
@@ -116,7 +116,7 @@ Conversely, for foreign sales, the leading genres were:
 
 # The duration of movies categorized by genres.
 
-![png](output_64_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/cf016ca2-47ed-4b53-bf6e-9949db440766)
     
 
     
@@ -133,8 +133,8 @@ Conversely, genres exhibiting the shortest average durations include "Action, Sp
 The runtime_minutes variable will be scrutinized to explore the correlation between movie duration and average rating, as well as the relationship between movie duration and sales across various markets.
 # Movie length market performanace 
 
-# Create visualization 
-![png](output_70_1.png)
+
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/be12682f-baac-4221-b6b1-27c45e8d69c3)
 
 # Findings 
 Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $  n8.5B. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
@@ -144,14 +144,14 @@ Among the various movie lengths observed, movies with a runtime of 59 minutes ge
 ![png](output_72_0.png)
      
 # Top movie length average rating
-![png](output_73_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/abcdca37-28c7-4873-a33f-1a45d76bdf10)
     
 # Findings
 Analysis of the average movie length and average showed that movie length of 192 enjoyed the highest rating folllowed by 45 and 47 minutes. 
 
 # Visualize the relationship between the movie runtimes and the movie average rating
     
-![png](output_75_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/dd5d4c25-6405-482a-87d8-012259735227)
     
 # Findings
 
@@ -160,19 +160,20 @@ Analysis of the average movie length and average showed that movie length of 192
 # Create visualization 
 
     
-![png](output_78_1.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/c1c24562-c308-4ec0-930b-018e01aedf51)
+
     
 # Visualize the relationship between the movie average rating and the movie sales
 # Plot a scatter plot
     
-![png](output_79_0.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/c586d9c4-9ecf-448d-bb93-e6974801646d)
     
 # Correlation Analysis
 The correlation coefficient between runtime_minutes’ and ‘averagerating’ is 0.25, between  ‘runtime_minutes’ and ‘global_sales’ is 0.19 and between ‘averagerating’ and ‘global_sales’ is 0.17.
 All correlations observed are positive, suggesting that as one variable increases, the other tends to increase as well.Market correlations are significant; however, their correlation with movie runtime and average rating is notably lower compared to other variables. These correlations can guide decision-making in areas of movie production and marketing.
 
 # Visualize the correlation matrix using a heatmap    
-![png](output_80_1.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/59e8dd96-9524-435b-97ce-8ac7f44d0af7)
     
 # Additional analysis
 
