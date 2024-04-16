@@ -140,6 +140,7 @@ Analysis of the average movie length and average showed that movie length of 192
 # Correlation Analysis
     
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/59e8dd96-9524-435b-97ce-8ac7f44d0af7)
+### Findings
  The correlation coefficient between runtime_minutes’ and ‘averagerating’ is 0.25, between  ‘runtime_minutes’ and ‘global_sales’ is 0.19 and between ‘averagerating’ and ‘global_sales’ is 0.17.
 All correlations observed are positive, suggesting that as one variable increases, the other tends to increase as well.Market correlations are significant; however, their correlation with movie runtime and average rating is notably lower compared to other variables. These correlations can guide decision-making in areas of movie production and marketing   
 # Additional analysis
@@ -160,7 +161,7 @@ Approximately 3.6 percent of the variability in global sales can be explained by
 
 Overall, the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their global sales. However, the low R-squared value indicates that the model explains only a small portion of the variance in gross sales, suggesting that other factors not included in the model may also influence  global sales.
 
- # Run a Simple Linear Regression with runtime  as the Predictor and domestic sales as dependent variable 
+ ### Run a Simple Linear Regression with runtime  as the Predictor and domestic sales as dependent variable 
 
 As previous  analysis above indicates, the length of the movie has a realtionship with sales.  Analysis delves further   quantifying the strength of the relationship in the domestic and foreign market.     
 ### Findings 
