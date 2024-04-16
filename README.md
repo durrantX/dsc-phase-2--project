@@ -59,15 +59,29 @@ To address business inquiries, particularly regarding market segmentation,  I es
 # Descriptive Statistics
 I will generate statistics that summarize the data concisely, and evaluate different ways to visualize data.
  ## Findings: Central Tendencies 
- runtime_minutes-
- Mean: 107.90 minutes, Median (50th Percentile): 106 minutes, Minimum: 3 minutes, Maximum: 272 minutes
-averagerating-
-Mean: 6.46, Median (50th Percentile): 6.5, Minimum: 1.6,  Maximum: 9.2
-domestic_gross-
-Mean: $50,081,030, Median (50th Percentile): $21,100,000, Minimum: $400, Maximum: $700,100,000
-foreign_gross-
-Mean: $79,595,820, Median (50th Percentile): $21,500,000, Minimum: $600, Maximum: $946,400,000
-global_sales-Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Maximum: $1,405,400,000
+ ### runtime_minutes-
+ Mean: 107.90 minutes
+ Median (50th Percentile): 106 minutes
+ Minimum: 3 minutes
+ Maximum: 272 minutes
+### averagerating-
+Mean: 6.46, 
+Median (50th Percentile): 6.5, 
+Minimum: 1.6,  
+Maximum: 9.2
+### domestic_gross-
+Mean: $50,081,030, 
+Median (50th Percentile): $21,100,000, 
+Minimum: $400, 
+Maximum: $700,100,000
+### foreign_gross-
+Mean: $79,595,820, 
+Median (50th Percentile): $21,500,000, 
+Minimum: $600, Maximum: $946,400,000
+### global_sales-
+Mean: $129,676,800, 
+Median (50th Percentile): $48,400,000, 
+Minimum: $10,800, Maximum: $1,405,400,000
 # Analyzing the Data and Building Visualizations
  ## Market performance through the years: Groupby year
 Group the movies by year, organizing them based on global sales categories.
