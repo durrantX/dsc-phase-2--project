@@ -141,9 +141,9 @@ Analysis of the average movie length and average showed that movie length of 192
 
     
 # Visualize the relationship between the movie average rating and the movie sales
-# Plot a scatter plot
+
     
-![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/c586d9c4-9ecf-448d-bb93-e6974801646d)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/084f80bc-f654-4daa-a8db-9293836f1127)
     
 # Correlation Analysis
     
