@@ -72,7 +72,7 @@ global_sales-Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum:
  ## Market performance through the years: Groupby year
 Group the movies by year, organizing them based on global sales categories.
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/29e7490c-6d1e-4e72-9b17-674d3981a623)
-Findings: 
+### Findings: 
 The findings reveal that between 2010 and 2018, there was a decline in the quantity of movies produced.
 Simultaneously, both foreign and global sales experienced significant upward trends, whereas domestic sales showed a moderate increase. This suggests an inverse relationship between the variables during the specified period. 
 
@@ -84,14 +84,14 @@ There are 260 different genres in the dataset.To  identify the genre that appear
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/eaf6a16a-5983-4e3a-bfb1-b00a2f9db9bd)
     
- Findings
+ ### Findings
 The analysis revealed the average ratings for each genre group. Notably, genres such as "Adventure", "Action, Sport", and "Drama, Western" emerged as the top-ranking genres with the highest average ratings.
 
 ### Market performance categorized by genres 
   
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
     
-Findings
+### Findings
 Findings reveal that the genres emerged as the top global grossing genres are: 
 "Action, Adventure, Sci-Fi", 
 "Adventure, Animation, Comedy",
@@ -110,7 +110,7 @@ Conversely, for foreign sales, the leading genres were:
 ### The duration of movies categorized by genres.
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/cf016ca2-47ed-4b53-bf6e-9949db440766)
-Findings
+### Findings
 Determining the mean runtime duration for each category of genres, indicated that the top three genres with the lengthiest average runtimes are "Drama, Western," "Adventure, Drama, Sci-Fi," and "Drama, History, Sports."
 Conversely, genres exhibiting the shortest average durations include "Action, Sport", "Adventure, Comedy, Horror," and "Documentary, News".
 
@@ -120,7 +120,7 @@ The runtime_minutes variable will be scrutinized to explore the correlation betw
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/be12682f-baac-4221-b6b1-27c45e8d69c3)
 
-Findings 
+### Findings 
 Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $8.5B. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
 
 ### Visualize the relationship between the movie length and the global sales using scatter plots
@@ -130,7 +130,7 @@ Among the various movie lengths observed, movies with a runtime of 59 minutes ge
 ### Top movie runtimes and the movie average rating
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/abcdca37-28c7-4873-a33f-1a45d76bdf10)
     
-Findings
+### Findings
 Analysis of the average movie length and average showed that movie length of 192 enjoyed the highest rating folllowed by 45 and 47 minutes. 
    
 ### Visualize the relationship between the movie average rating and the movie sales
@@ -145,7 +145,7 @@ All correlations observed are positive, suggesting that as one variable increase
 # Additional analysis
 Linear regression statistcal modeling will be used to provide better insights by uncovering patterns and relationships to better inform  business  decisions. 
 ### Linear regression with runtime as the predictor of global sales 
-# Findings 
+### Findings 
  The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted gross sales.
 #Coefficients of the model
 #The intercept(const ): -8.354e+07 runtime_minutes  1.976e+06
@@ -166,7 +166,7 @@ As previous  analysis above indicates, the length of the movie has a realtionshi
 
 # Runtime as the predictor of domestic sales
     
-Findings 
+### Findings 
  The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted doemestic sales.
 Coefficients:
 The intercept (const) is  -18,440,000.
@@ -192,7 +192,7 @@ R-squared is 0.029, indicating that approximately 2.9 percent of the variance in
 F-statistic: 52.69 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
 Overall the regression model suggests that there is a statistically significant positive relationship between the  averageratings of movies and their global sales. However, the R-squared value indicates that the model explains only a small proportion of the variance in global sales, suggesting that other factors not included in the model is  influencing global sales.
 # Runtime as the predictor of average rating
-Findings 
+### Findings 
 The R-squared value, is 0.061. This suggests that approximately 6.1% of the variance in movie ratings can be explained by the independent variable (runtime_minutes).
 Coefficients:
 The coefficient for the runtime_minutes variable is 0.0122. 
