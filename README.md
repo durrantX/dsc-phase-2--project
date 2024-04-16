@@ -1,12 +1,6 @@
 ## Final Project Submission
 
-* Student name:  Deon Durrant
-* Student pace: self paced 
-* Scheduled project review date/time: 
-* Instructor name: Mark Bardour
-* Blog post URL:
-
-
+* Author: Deon Durrant
 
 # Project Overview
 
@@ -80,7 +74,7 @@ Mean: $129,676,800, Median (50th Percentile): $48,400,000, Minimum: $10,800, Max
 Group the movies by year, organizing them based on global sales categories.
 
 # Create visualization
-![alt text](image-1.png)
+![alt text](image-6.png)
 
 Findings: 
 The findings reveal that between 2010 and 2018, there was a decline in the quantity of movies produced.
