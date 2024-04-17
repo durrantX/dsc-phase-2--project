@@ -240,4 +240,9 @@ The F-statistic is 115.1 with a very low p-value (4.64e-26), indicating that the
 All OLS analyses were statistically significant. However, the low R-squared values suggest that the model explains only a small proportion of the variances in the dependent variables, indicating the influence of other factors not included in the model.
 For More Information
 See the full analysis in the Jupyter Notebook or review this presentation.
-# Data structure
+## Data structure
+──.gitignore 
+── Presentation.pdf
+── README.md
+── movie_db_analysis.ipynb
+── output.csv
