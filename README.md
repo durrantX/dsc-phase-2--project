@@ -41,9 +41,9 @@ Data Type Conversion
 1.Change foreign_gross to float dtype
 ### Merge Databases for Analysis
 To conduct a thorough analysis, I will merge the IMDB and BOM databases. This integration will enable a comprehensive examination of the data.
-### Explore and examine the merrged dataset movie_db
+### Explore and examine the merged dataset movie_db
 Examine the data structure.
-#Overview of the numerical features of the dataset
+Overview of the numerical features of the dataset
 ### Summary of the overall structure of  movie_dataframe
 The data summary confirms this is a pandas dataframe. The combined dataframe has 1767 entries within 10 columns. There is no indication of missing data. dtypes: float64(4), int64(2), object(4)
 memory usage: 151.9+ KB
@@ -162,16 +162,15 @@ Linear regression statistcal modeling will be used to provide better insights by
 ### Linear regression with runtime as the predictor of global sales 
 ### Findings 
  The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted gross sales.
-#Coefficients of the model
-#The intercept(const ): -8.354e+07 runtime_minutes  1.976e+06
+Coefficients of the model
+The intercept(const ): -8.354e+07 runtime_minutes  1.976e+06
 The fitted regression model was: Global Sales=-8.354e+07+1.976e+06*runtime_minutes
 Suggesting that for every additional minute in movie length, global sales are expected to increase by 1.976e+06 units($1,976,000).
-The overall regression was statistically significant
+
 R-squared: 0.036, 
 Adj. R-squared:0.037 
 Approximately 3.6 percent of the variability in global sales can be explained by the length of the movie.
- F-statistic is 65.31,  low p-value,  (Prob (F-statistic):  1.18e-15) suggesting that the regression model is statistically 
- significant. 
+ F-statistic is 65.31,  low p-value,  (Prob (F-statistic):  1.18e-15) suggesting that the regression model is statistically significant. 
 
 Overall, the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their global sales. However, the low R-squared value indicates that the model explains only a small portion of the variance in gross sales, suggesting that other factors not included in the model may also influence  global sales.
 
@@ -196,8 +195,8 @@ The ordinary least square  regression was used to test if  movie ratings(average
 Coefficients:
 The intercept (const) is  --1.037e+08 
 averagerating   3.613e+07
-The fitted regression model was:Global sales = -1.037e+08 +3.613e+07*averagerating
-The coefficient for the predictor variable averagerating is approximately 36 million dollars . This means that for each additional  unit of average rating  the global sales is estimated to increase by approximately 36M dollars.
+The fitted regression model was:Global sales = -1.037e+08 +3.613e+07*averagerating.
+The coefficient for the predictor variable averagerating is approximately 36 million dollars. This means that for each additional  unit of average rating  the global sales is estimated to increase by approximately 36M dollars.
 R-squared:  0.029
 Adjusted R-squared: 0.028.
 R-squared is 0.029, indicating that approximately 2.9 percent of the variance in global sales is explained by the predictor variable (averagerating).
@@ -206,9 +205,11 @@ Overall the regression model suggests that there is a statistically significant 
 # Runtime as the predictor of average rating
 ### Findings 
 The R-squared value, is 0.061. This suggests that approximately 6.1% of the variance in movie ratings can be explained by the independent variable (runtime_minutes).
+
 Coefficients:
 The coefficient for the runtime_minutes variable is 0.0122. 
 This indicates that, on average, for each additional minute in the runtime of a movie, the average rating is expected to increase by approximately 0.0122 units.
+
 The F-statistic is 115.1 with a very low p-value (4.64e-26), indicating that the overall regression model is statistically significant.
  The regression results indicate that there is a statistically significant but modest positive relationship between movie runtime and average rating. The model explains only a small proportion of the variance in movie ratings, suggesting that other factors beyond runtime also influence the average rating of movies.
 
