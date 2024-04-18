@@ -136,7 +136,7 @@ The runtime_minutes variable will be scrutinized to explore the correlation betw
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/be12682f-baac-4221-b6b1-27c45e8d69c3)
 
 ### Findings 
-Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $8.5B. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
+Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $8.5B dollars. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
 
 ### Visualize the relationship between the movie length and the global sales using scatter plots
     
@@ -146,7 +146,7 @@ Among the various movie lengths observed, movies with a runtime of 59 minutes ge
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/abcdca37-28c7-4873-a33f-1a45d76bdf10)
     
 ### Findings
-Analysis of the average movie length and average showed that movie length of 192 enjoyed the highest rating folllowed by 45 and 47 minutes. 
+Analysis of the average movie length and average ratings showed that movie length of 192 enjoyed the highest rating folllowed by 45 and 47 minutes. 
    
 ### Visualize the relationship between the movie average rating and the movie sales
 
@@ -157,7 +157,7 @@ Analysis of the average movie length and average showed that movie length of 192
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/59e8dd96-9524-435b-97ce-8ac7f44d0af7)
 ### Findings
  The correlation coefficient between runtime_minutes’ and ‘averagerating’ is 0.25, between  ‘runtime_minutes’ and ‘global_sales’ is 0.19 and between ‘averagerating’ and ‘global_sales’ is 0.17.
-All correlations observed are positive, suggesting that as one variable increases, the other tends to increase as well.  Market correlations are significant; however, their correlation with movie runtime and average rating is notably lower compared to other variables. These correlations can guide decision-making in areas of movie production and marketing   
+All correlations observed are positive, suggesting that as one variable increases, the other tends to increase as well. These correlations can guide decision-making in areas of movie production and marketing.  
 # Additional analysis
 Linear regression statistcal modeling will be used to provide better insights by uncovering patterns and relationships to better inform  business  decisions. 
 ### Linear regression with runtime as the predictor of global sales 
@@ -173,13 +173,13 @@ Adj. R-squared:0.037
 Approximately 3.6 percent of the variability in global sales can be explained by the length of the movie.
  F-statistic is 65.31,  low p-value,  (Prob (F-statistic):  1.18e-15) suggesting that the regression model is statistically significant. 
 
-Overall, the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their global sales. However, the low R-squared value indicates that the model explains only a small portion of the variance in gross sales, suggesting that other factors not included in the model may also influence  global sales.
+Overall, the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their global sales.  The low R-squared value indicates that the model explains only a small portion of the variance in gross sales, suggesting that other factors not included in the model may also influence  global sales.
 
  ### Run a Simple Linear Regression with runtime  as the Predictor and domestic sales as dependent variable 
 
-As previous  analysis above indicates, the length of the movie has a realtionship with sales.  Analysis delves further   quantifying the strength of the relationship in the domestic and foreign market.     
+As previous  analysis above indicates, the length of the movie has a relationship with sales.  Analysis delves further quantifying the strength of the relationship in the domestic and foreign market.     
 ### Findings 
- The ordinary least square  regression was used to test if  movie length(runtime_minutes) significantly predicted doemestic sales.
+ The OLS  regression was used to test if  movie length(runtime_minutes) significantly predicted doemestic sales.
 Coefficients:
 The intercept (const) is  -18,440,000.
 runtime_minutes  6.351e+05 
@@ -187,22 +187,22 @@ The fitted regression model was:Domestic gross= -18,440,000+6.351e+05*runtime_mi
 The coefficient for the predictor variable runtime_minutes is approximately 635,100. This means that for each additional minute of runtime, the domestic gross is estimated to increase by approximately $635,100.
 R-squared:  0.025
 Adjusted R-squared: 0.024.
-R-squared is 0.025, indicating that approximately 2.5 percent of the variance in domestic gross is explained by the predictor variable (runtime_minutes).
+R-squared is 0.025, indicating that approximately 2.5 percent of the variance in domestic gross is explained by runtime_minutes.
 F-statistic: 44.97 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
-Overall the regression model suggests that there is a statistically significant positive relationship between the runtime of movies and their domestic gross. However, the R-squared value indicates that the model explains only a small proportion of the variance in domestic gross, suggesting that other factors not included in the model is  influencing domestic gross.
+The model suggests that there is a statistically significant positive relationship between the runtime of movies and their domestic gross. The R-squared value indicates that the model explains only a small proportion of the variance in domestic gross, other factors not included in the model maybe  influencing domestic gross.
  
 # OLS with movie ratings(averagerating) as the predictor and global sales as dependent variable
-The ordinary least square  regression was used to test if  movie ratings(averagerating) significantly predicted global sales
+OLS regression was used to test if  movie ratings(averagerating) significantly predicted global sales
 Coefficients:
 The intercept (const) is  --1.037e+08 
 averagerating   3.613e+07
 The fitted regression model was:Global sales = -1.037e+08 +3.613e+07*averagerating.
-The coefficient for the predictor variable averagerating is approximately 36 million dollars. This means that for each additional  unit of average rating  the global sales is estimated to increase by approximately 36M dollars.
+The coefficient for averagerating is approximately 36 million dollars. This means that for each additional  unit of average rating  the global sales is estimated to increase by approximately 36M dollars.
 R-squared:  0.029
 Adjusted R-squared: 0.028.
-R-squared is 0.029, indicating that approximately 2.9 percent of the variance in global sales is explained by the predictor variable (averagerating).
+R-squared is 0.029, indicating that approximately 2.9 percent of the variance in global sales is explained by  averagerating.
 F-statistic: 52.69 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
-Overall the regression model suggests that there is a statistically significant positive relationship between the  averageratings of movies and their global sales. However, the R-squared value indicates that the model explains only a small proportion of the variance in global sales, suggesting that other factors not included in the model is  influencing global sales.
+ The regression model suggests that there is a statistically significant positive relationship between the  averageratings of movies and their global sales. The R-squared value indicates that the model explains only a small proportion of the variance in global sales, suggesting that other factors not included in the model maybe influencing global sales.
 # Runtime as the predictor of average rating
 ### Findings 
 The R-squared value, is 0.061. This suggests that approximately 6.1% of the variance in movie ratings can be explained by the independent variable (runtime_minutes).
@@ -212,9 +212,18 @@ The coefficient for the runtime_minutes variable is 0.0122.
 This indicates that, on average, for each additional minute in the runtime of a movie, the average rating is expected to increase by approximately 0.0122 units.
 
 The F-statistic is 115.1 with a very low p-value (4.64e-26), indicating that the overall regression model is statistically significant.
- The regression results indicate that there is a statistically significant but modest positive relationship between movie runtime and average rating. The model explains only a small proportion of the variance in movie ratings, suggesting that other factors beyond runtime also influence the average rating of movies.
+ The regression results indicate that there is a statistically significant relationship between movie runtime and average rating. The model explains only a small proportion of the variance in movie ratings, suggesting that other factors beyond runtime also influence the average rating of movies.
 
+# OLS genre and global sales 
+Convert categorical genres to numeric for regression analysis
+![alt text](image-9.png)
+## Findings
+This OLS regression analysis provides insights into the relationship between global sales, and the independent  numeric_genres. 
+The R-squared value of 0.122 indicates that approximately 12.2% of the variation in global sales can be explained by the variation in numeric_genres.
 
+The F-statistic of 245.5 with a very low p-value (6.61e-52) suggests that the regression model as a whole is statistically significant. 
+
+ The regression model suggests that there is a statistically significant relationship between the number of genres and global sales.The model explains only a small portion of the variation in global sales, and there may be other factors not included in the analysis that influence movie sales
 # Conclusion 
 
  1.	Between 2010 and 2018, the quantity of movies produced saw a decline. However, market performance over these years demonstrated significant upward trends in both foreign and global sales, while domestic sales showed a moderate increase. This indicates an inverse relationship between the variables during the specified period.
