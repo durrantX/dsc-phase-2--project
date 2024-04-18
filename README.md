@@ -260,7 +260,11 @@ For More Information
 See the full analysis in the Jupyter Notebook or review this presentation.
 ## Data structure
 ──.gitignore 
+
 ── Presentation.pdf
+
 ── README.md
+
 ── movie_db_analysis.ipynb
+
 ── output.csv
