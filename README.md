@@ -185,23 +185,29 @@ The intercept (const) is  -18,440,000.
 runtime_minutes  6.351e+05 
 The fitted regression model was:Domestic gross= -18,440,000+6.351e+05*runtime_minutes
 The coefficient for the predictor variable runtime_minutes is approximately 635,100. This means that for each additional minute of runtime, the domestic gross is estimated to increase by approximately $635,100.
+
 R-squared:  0.025
 Adjusted R-squared: 0.024.
 R-squared is 0.025, indicating that approximately 2.5 percent of the variance in domestic gross is explained by runtime_minutes.
+
 F-statistic: 44.97 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
 The model suggests that there is a statistically significant positive relationship between the runtime of movies and their domestic gross. The R-squared value indicates that the model explains only a small proportion of the variance in domestic gross, other factors not included in the model maybe  influencing domestic gross.
  
 # OLS with movie ratings(averagerating) as the predictor and global sales as dependent variable
 OLS regression was used to test if  movie ratings(averagerating) significantly predicted global sales
+
 Coefficients:
 The intercept (const) is  --1.037e+08 
 averagerating   3.613e+07
 The fitted regression model was:Global sales = -1.037e+08 +3.613e+07*averagerating.
 The coefficient for averagerating is approximately 36 million dollars. This means that for each additional  unit of average rating  the global sales is estimated to increase by approximately 36M dollars.
+
 R-squared:  0.029
 Adjusted R-squared: 0.028.
 R-squared is 0.029, indicating that approximately 2.9 percent of the variance in global sales is explained by  averagerating.
+
 F-statistic: 52.69 and  low probability (p < 0.001)indicating that the overall model is statistically significant.
+
  The regression model suggests that there is a statistically significant positive relationship between the  averageratings of movies and their global sales. The R-squared value indicates that the model explains only a small proportion of the variance in global sales, suggesting that other factors not included in the model maybe influencing global sales.
 # Runtime as the predictor of average rating
 ### Findings 
@@ -216,6 +222,7 @@ The F-statistic is 115.1 with a very low p-value (4.64e-26), indicating that the
 
 # OLS genre and global sales 
 Convert categorical genres to numeric for regression analysis
+
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/8dca702d-bf16-4821-a48d-d05d7d447a02)
 
 ## Findings
