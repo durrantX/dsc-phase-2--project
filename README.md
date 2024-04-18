@@ -216,7 +216,8 @@ The F-statistic is 115.1 with a very low p-value (4.64e-26), indicating that the
 
 # OLS genre and global sales 
 Convert categorical genres to numeric for regression analysis
-![alt text](image-9.png)
+![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/8dca702d-bf16-4821-a48d-d05d7d447a02)
+
 ## Findings
 This OLS regression analysis provides insights into the relationship between global sales, and the independent  numeric_genres. 
 The R-squared value of 0.122 indicates that approximately 12.2% of the variation in global sales can be explained by the variation in numeric_genres.
