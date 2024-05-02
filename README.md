@@ -23,28 +23,39 @@ Understanding the data involves consolidating information from two distinct movi
 Investigate patterns, variations, and relevant characteristics during exploratory data analysis. Scrutinize data for irregularities and constraints.
 - Import databases:
     Create dataframe from SQLite database IMDB by joining movie basics and movie ratings tables.
+  
     Import Box Office Mojo data from a CSV file.
   
--Summary of IMDB dataframe structure:
+-    Summary of IMDB dataframe structure:
    146143 entries, 6 columns.
-  Missing data in 3 columns.
+   
+  Missing data in 3 columns
+  
   dtypes: float64(2), int64(1), object(3)
   
--Summary of bom_movie dataframe structure:
+-    Summary of bom_movie dataframe structure:
     3387 entries, 5 columns.
+    
    Missing data in 3 columns.
+   
    dtypes: float64(1), int64(1), object(3).
+   
    Convert foreign_gross to float dtype.
    
 - Data Cleaning:
    Address typos, capitalization variations, and naming conventions.
+  
    Convert foreign_gross to float.
   
--Merge Databases for Analysis: Merge IMDB and BOM databases.
+- Merge Databases for Analysis: Merge IMDB and BOM databases.
    Explore merged dataset movie_db:Examine data structure and numerical features.
+   
     1767 entries, 10 columns.
+    
     No missing data.
+    
    dtypes: float64(4), int64(2), object(4).
+   
    Drop unnecessary columns
 ## Feature Engineering Global Sales
 To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
