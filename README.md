@@ -27,16 +27,18 @@ Investigate patterns, variations, and relevant characteristics during explorator
     Import Box Office Mojo data from a CSV file.
   
 -    Summary of IMDB dataframe structure:
-   146143 entries, 6 columns.
+-    
+     146143 entries, 6 columns.
    
-  Missing data in 3 columns
+     Missing data in 3 columns
   
-  dtypes: float64(2), int64(1), object(3)
+    dtypes: float64(2), int64(1), object(3)
   
 -    Summary of bom_movie dataframe structure:
+  
     3387 entries, 5 columns.
     
-   Missing data in 3 columns.
+    Missing data in 3 columns.
    
    dtypes: float64(1), int64(1), object(3).
    
@@ -48,6 +50,7 @@ Investigate patterns, variations, and relevant characteristics during explorator
    Convert foreign_gross to float.
   
 - Merge Databases for Analysis: Merge IMDB and BOM databases.
+  
    Explore merged dataset movie_db:Examine data structure and numerical features.
    
     1767 entries, 10 columns.
