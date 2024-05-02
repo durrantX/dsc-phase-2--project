@@ -22,26 +22,30 @@ Understanding the data involves consolidating information from two distinct movi
 # Exploratory Data Analysis
 Investigate patterns, variations, and relevant characteristics during exploratory data analysis. Scrutinize data for irregularities and constraints.
 - Import databases:
--  Create dataframe from SQLite database IMDB by joining movie basics and movie ratings tables.
--  Import Box Office Mojo data from a CSV file.
+    Create dataframe from SQLite database IMDB by joining movie basics and movie ratings tables.
+    Import Box Office Mojo data from a CSV file.
+  
 -Summary of IMDB dataframe structure:
--   146143 entries, 6 columns.
--   Missing data in 3 columns.
--  dtypes: float64(2), int64(1), object(3).
+   146143 entries, 6 columns.
+  Missing data in 3 columns.
+  dtypes: float64(2), int64(1), object(3)
+  
 -Summary of bom_movie dataframe structure:
--   3387 entries, 5 columns.
--   Missing data in 3 columns.
--   dtypes: float64(1), int64(1), object(3).
--   Convert foreign_gross to float dtype.
+    3387 entries, 5 columns.
+   Missing data in 3 columns.
+   dtypes: float64(1), int64(1), object(3).
+   Convert foreign_gross to float dtype.
+   
 - Data Cleaning:
--   Address typos, capitalization variations, and naming conventions.
--   Convert foreign_gross to float.
+   Address typos, capitalization variations, and naming conventions.
+   Convert foreign_gross to float.
+  
 -Merge Databases for Analysis: Merge IMDB and BOM databases.
--   Explore merged dataset movie_db:Examine data structure and numerical features.
--   1767 entries, 10 columns.
--   No missing data.
--   dtypes: float64(4), int64(2), object(4).
--   Drop unnecessary columns
+   Explore merged dataset movie_db:Examine data structure and numerical features.
+    1767 entries, 10 columns.
+    No missing data.
+   dtypes: float64(4), int64(2), object(4).
+   Drop unnecessary columns
 ## Feature Engineering Global Sales
 To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
 
@@ -101,16 +105,6 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
   
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
 
-             
-  |    Analysis of Genres   |
- |Highest Rating |Longest Duration   | Shortest Duration| Market Performance|
-                                                         | --------------------|
-|----------   |----------|----------| -------------- ----|Domestic  | Foreign |Global|
-|“Adventure” | "Drama, Western" | "Action, Sport" |      |"Action, Adventure, Sci-Fi", |"Adventure, Animation, Comedy"|"Action, Adventure, Sci-Fi",|    
-
- 
-    
-    
 ### Findings
 Findings reveal that the genres emerged as the top global grossing genres are: 
 "Action, Adventure, Sci-Fi", 
