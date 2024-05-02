@@ -20,43 +20,38 @@ The focus lies in identifying movie genres, assessing movie durations, and under
 Understanding the data involves consolidating information from two distinct movie databases covering the years 2010 to 2018. The dataset originates from two separate sources: a SQL database and a CSV file. Prior to merging, thorough preprocessing and cleaning procedures are applied. Additionally, feature engineering techniques are utilized to establish a new market segment. To support initial insights and enhance visualization capabilities, categorical variable is encoded.
 
 # Exploratory Data Analysis
-During the exploratory data analysis phase, I will investigate patterns, variations, and other characteristics relevant to the business inquiries. Simultaneously, I will scrutinize the data for irregularities and recognize any constraints it may have.
+Investigate patterns, variations, and relevant characteristics during exploratory data analysis. Scrutinize data for irregularities and constraints.
+- Import databases:
+-  Create dataframe from SQLite database IMDB by joining movie basics and movie ratings tables.
+-  Import Box Office Mojo data from a CSV file.
+-Summary of IMDB dataframe structure:
+-   146143 entries, 6 columns.
+-   Missing data in 3 columns.
+-  dtypes: float64(2), int64(1), object(3).
+-Summary of bom_movie dataframe structure:
+-   3387 entries, 5 columns.
+-   Missing data in 3 columns.
+-   dtypes: float64(1), int64(1), object(3).
+-   Convert foreign_gross to float dtype.
+- Data Cleaning:
+-   Address typos, capitalization variations, and naming conventions.
+-   Convert foreign_gross to float.
+-Merge Databases for Analysis: Merge IMDB and BOM databases.
+-   Explore merged dataset movie_db:Examine data structure and numerical features.
+-   1767 entries, 10 columns.
+-   No missing data.
+-   dtypes: float64(4), int64(2), object(4).
+-   Drop unnecessary columns
+## Feature Engineering Global Sales
+To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
 
-# Importing the databases
-Begin by importing the data and converting it into a pandas dataframe.
-Data from IMDB is located in a SQLite database will be imported first.To address the business problem tables movie_basic and movie_ratings will be used. The dataframe for analysis created by joining movie basics and moving ratings tables. Data from the Box Office Mojo is a csv file.
- 
-## Explore and Examine IMDB data
-### Summary of the overall structure of  IMDB dataframe
-The data summary confirms this is a pandas dataframe. The dataframe has 146143 entries within 6 columns. Indication of missing data in 3 of the columns. Decisions regarding handling of such is taken during data cleaning.
-dtypes: float64(2), int64(1), object(3) memory usage: 6.7+ MB
-
-### Explore and examine BOM  data
-### Summary of the overall structure of  bom_movie dataframe
-The data summary confirms this is a pandas dataframe. The dataframe has 3387 entries within 5 columns Indication of missing data in 3 of the columns. Decisions regarding handling of such is taken during data cleaning. dtypes: float64(1), int64(1), object(3). 
-foreign_gross is an object data type and requres a change to float.
-# Data Cleaning 
- Handling inconsistent data:
-Address typos, variations in capitalization, and naming conventions
-Data Type Conversion
-1.Change foreign_gross to float dtype
-### Merge Databases for Analysis
-To conduct a thorough analysis, I will merge the IMDB and BOM databases. This integration will enable a comprehensive examination of the data.
-### Explore and examine the merged dataset movie_db
-Examine the data structure.
-Overview of the numerical features of the dataset
-### Summary of the overall structure of  movie_dataframe
-The data summary confirms this is a pandas dataframe. The combined dataframe has 1767 entries within 10 columns. There is no indication of missing data. dtypes: float64(4), int64(2), object(4)
-memory usage: 151.9+ KB
 ## To address the business inquiry and provide actionable insights:
 1.  Analysis will entail movie genres as a predictor of  sales, average rating, and runtime.
 2. Investigate the relationship between movie length (runtime), average rating, and sales across different market segments
 3. Explore how movie length(runtime) correlates with  sales.
 4. Assess geographical market segmentation, aligning with the company's areas of interest.
-## Drop unnecessary columns
-movie_db.drop(['start_year' ,'movieID', 'studio'], axis=1, inplace=True)
-## Feature Engineering Global Sales
-To address business inquiries, particularly regarding market segmentation,  I established a global sales column by aggregating both foreign and domestic sales.
+
+
 # Descriptive Statistics
 I will generate statistics that summarize the data concisely, and evaluate different ways to visualize data.
  ## Findings: Central Tendencies 
@@ -105,6 +100,16 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 ### Market performance categorized by genres 
   
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
+
+             
+  |    Analysis of Genres   |
+ |Highest Rating |Longest Duration   | Shortest Duration| Market Performance|
+                                                         | --------------------|
+|----------   |----------|----------| -------------- ----|Domestic  | Foreign |Global|
+|“Adventure” | "Drama, Western" | "Action, Sport" |      |"Action, Adventure, Sci-Fi", |"Adventure, Animation, Comedy"|"Action, Adventure, Sci-Fi",|    
+
+ 
+    
     
 ### Findings
 Findings reveal that the genres emerged as the top global grossing genres are: 
@@ -234,36 +239,32 @@ The F-statistic of 245.5 with a very low p-value (6.61e-52) suggests that the re
  The regression model suggests that there is a statistically significant relationship between the number of genres and global sales.The model explains only a small portion of the variation in global sales, and there may be other factors not included in the analysis that influence movie sales
 # Conclusion 
 
- 1.	Between 2010 and 2018, the quantity of movies produced saw a decline. However, market performance over these years demonstrated significant upward trends in both foreign and global sales, while domestic sales showed a moderate increase. This indicates an inverse relationship between the variables during the specified period.
- 2. The genre most frequently observed is "Drama."
- 3. Analysis reveals that the top-ranking genres with the highest average ratings are "Adventure", "Action, Sport", and "Drama, Western".
- 4. The top global grossing genres are identified as "Action, Adventure, Sci-Fi", "Adventure, Animation, Comedy", and "Action, Adventure, Fantasy".
- 5.	A comparison of domestic and foreign sales by genre highlights that the top genres for domestic sales include "Action, Adventure, Sci-Fi", "Adventure, Animation, Comedy", and "Action, Adventure, Fantasy". Conversely, leading genres for foreign sales comprise "Adventure, Animation, Comedy", "Action, Adventure, Sci-Fi", and "Action, Adventure, Fantasy".
- 6.	Determining the mean runtime duration for each genre category, it is observed that the top three genres with the lengthiest average runtimes are "Drama, Western", "Adventure, Drama, Sci-Fi", and "Drama, History, Sports". Conversely, genres with the shortest average durations include "Action, Sport", "Adventure, Comedy, Horror", and "Documentary, News".
- 7.	Movies with a runtime of 59 minutes generated the highest global gross sales, amounting to 8.5B.
- 8. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes, respectively.
- 9.	Analysis of the average movie length and average rating showed that movies with lengths of 192 minutes enjoyed the highest ratings, followed by those with lengths of 45 and 47 minutes.
- 10.	The Ordinary Least Squares (OLS) analysis yielded the following results:
+ Based on these findings, here are three actionable recommendations
+1. Genre-based Content Strategy:
+- The top-ranking genres with the highest average ratings, such as "Adventure", "Action, Sport", and "Drama, Western", prioritize content creation and marketing efforts towards these genres.
+- Allocate resources towards developing compelling narratives and high-quality productions within these genres to attract and retain audiences.
  
- • For movie length and global sales, the R-squared value was 0.036, indicating that approximately 3.6% of the variability in global sales can be explained by movie length.
- 
- •	Movie length and domestic sales had an R-squared value of 0.025, suggesting that approximately 2.5% of the variance in domestic gross is explained by movie length.
- 
- •	Movie ratings and global sales yielded an R-squared value of 0.029, indicating that approximately 2.9% of the variance in global sales is explained by movie ratings.
- 
- •	The R-squared value for movie length and movie ratings was 0.061, suggesting that approximately 6.1% of the variance in movie ratings can be explained by movie length.
- 
- •	Genres and global sales had an R-squared value of 0.122, indicating that approximately 12.2% of the variability in global sales can be explained by genres.
+2.  Market-specific Distribution Approach: The Global Strategy
+- Tailor distribution strategies based on market preferences 
+- Foreign markets  focus on promoting genres like "Adventure, Animation, Comedy" and "Action, Adventure, Sci-Fi" 
+- Domestic markets emphasize genres like "Action, Adventure, Fantasy
 
-All OLS analyses were statistically significant. However, the low R-squared values suggest that the model explains only a small proportion of the variances in the dependent variables, indicating the influence of other factors not included in the model.
-For More Information
+3. Optimize Movie Runtimes for Global Appeal:
+- Optimize movie lengths to align with audience preferences across different markets. 
+- Shorter runtimes like 59 minutes show strong performance globally.
+- Longer durations like 152 and 149 minutes resonate better domestically. 
+- Tailor content duration based on regional preferences to maximize audience engagement and revenue generation.
+
 See the full analysis in the Jupyter Notebook or review this presentation.
+
 ## Data structure
 ──.gitignore 
 
 ── Presentation.pdf
 
 ── README.md
+
+── bom.movie_gross.csv
 
 ── movie_db_analysis.ipynb
 
