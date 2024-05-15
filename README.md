@@ -139,7 +139,6 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
   
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
 
-### Findings
 # Movie Genre Sales Analysis
 
 ## Top Grossing Genres Globally
@@ -168,7 +167,7 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 ### The duration of movies categorized by genres.
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/cf016ca2-47ed-4b53-bf6e-9949db440766)
-### Findings
+
 # Analysis of Movie Runtime by Genre
 
 ## Overview
@@ -196,8 +195,6 @@ The runtime_minutes variable will be scrutinized to explore the correlation betw
 ### Movie length market performanace 
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/be12682f-baac-4221-b6b1-27c45e8d69c3)
-
-### Findings 
 
 # Movie Runtime Sales Analysis
 
