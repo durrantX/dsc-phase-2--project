@@ -175,7 +175,7 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 This analysis examines the mean runtime durations across various movie genres, identifying the genres with the longest and shortest average durations.
 
 ## Longest Average Runtime Genres
-The top three genres with the lengthiest runtimes are noted for their complex narratives or expansive settings:
+The top three genres with the lengthiest runtimes are noted for their complex narratives:
 | Rank | Genre                        | Average Runtime |
 |------|------------------------------|-----------------|
 | 1    | Drama, Western               | 165 mins        |
@@ -183,7 +183,7 @@ The top three genres with the lengthiest runtimes are noted for their complex na
 | 3    | Drama, History, Sports       | 151 mins        |
 
 ## Shortest Average Runtime Genres
-Conversely, the genres with the shortest runtimes often focus on more direct or niche themes:
+Conversely, the genres with the shortest runtimes often focus on more niche themes:
 | Rank | Genre                        | Average Runtime |
 |------|------------------------------|-----------------|
 | 1    | Action, Sport                | 47 mins         |
