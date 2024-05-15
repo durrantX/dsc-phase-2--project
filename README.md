@@ -72,6 +72,49 @@ To address business inquiries, particularly regarding market segmentation,  I es
 
 # Descriptive Statistics
 I will generate statistics that summarize the data concisely, and evaluate different ways to visualize data.
+
+# Movie Data Analysis - Central Tendencies
+
+## Runtime Minutes
+| Statistic        | Value          |
+|------------------|----------------|
+| **Mean**         | 107.90 minutes |
+| **Median**       | 106 minutes    |
+| **Minimum**      | 3 minutes      |
+| **Maximum**      | 272 minutes    |
+
+## Average Rating
+| Statistic        | Value          |
+|------------------|----------------|
+| **Mean**         | 6.46           |
+| **Median**       | 6.5            |
+| **Minimum**      | 1.6            |
+| **Maximum**      | 9.2            |
+
+## Domestic Gross (USD)
+| Statistic        | Value          |
+|------------------|----------------|
+| **Mean**         | $50,081,030    |
+| **Median**       | $21,100,000    |
+| **Minimum**      | $400           |
+| **Maximum**      | $700,100,000   |
+
+## Foreign Gross (USD)
+| Statistic        | Value          |
+|------------------|----------------|
+| **Mean**         | $79,595,820    |
+| **Median**       | $21,500,000    |
+| **Minimum**      | $600           |
+| **Maximum**      | $946,400,000   |
+
+## Global Sales (USD)
+| Statistic        | Value          |
+|------------------|----------------|
+| **Mean**         | $129,676,800   |
+| **Median**       | $48,400,000    |
+| **Minimum**      | $10,800        |
+| **Maximum**      | $1,405,400,000 |
+
  ## Findings: Central Tendencies 
  ### runtime_minutes-
  Mean: 107.90 minutes
@@ -134,6 +177,30 @@ Conversely, for foreign sales, the leading genres were:
 "Adventure, Animation, Comedy",
 "Action, Adventure, Sci-Fi",
 "Action, Adventure, Fantasy
+# Movie Genre Sales Analysis
+
+## Top Grossing Genres Globally
+| Rank | Genre                         |
+|------|-------------------------------|
+| 1    | Action, Adventure, Sci-Fi     |
+| 2    | Adventure, Animation, Comedy  |
+| 3    | Action, Adventure, Fantasy    |
+
+## Sales Comparison by Genre
+### Domestic Sales
+| Rank | Genre                         |
+|------|-------------------------------|
+| 1    | Action, Adventure, Sci-Fi     |
+| 2    | Adventure, Animation, Comedy  |
+| 3    | Action, Adventure, Fantasy    |
+
+### Foreign Sales
+| Rank | Genre                         |
+|------|-------------------------------|
+| 1    | Adventure, Animation, Comedy  |
+| 2    | Action, Adventure, Sci-Fi     |
+| 3    | Action, Adventure, Fantasy    |
+
 
 ### The duration of movies categorized by genres.
 
