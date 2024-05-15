@@ -373,7 +373,7 @@ See the full analysis in the Jupyter Notebook or review this presentation.
 
 ── bom.movie_gross.csv
 
-__ im.zip
+── im.zip
 
 ── movie_db_analysis.ipynb
 
