@@ -169,8 +169,27 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/cf016ca2-47ed-4b53-bf6e-9949db440766)
 ### Findings
-Determining the mean runtime duration for each category of genres, indicated that the top three genres with the lengthiest average runtimes are "Drama, Western," "Adventure, Drama, Sci-Fi," and "Drama, History, Sports."
-Conversely, genres exhibiting the shortest average durations include "Action, Sport", "Adventure, Comedy, Horror," and "Documentary, News".
+# Analysis of Movie Runtime by Genre
+
+## Overview
+This analysis examines the mean runtime durations across various movie genres, identifying the genres with the longest and shortest average durations.
+
+## Longest Average Runtime Genres
+The top three genres with the lengthiest runtimes are noted for their complex narratives or expansive settings:
+| Rank | Genre                        | Average Runtime |
+|------|------------------------------|-----------------|
+| 1    | Drama, Western               | 165 mins        |
+| 2    | Adventure, Drama, Sci-Fi     | 156 mins        |
+| 3    | Drama, History, Sports       | 151 mins        |
+
+## Shortest Average Runtime Genres
+Conversely, the genres with the shortest runtimes often focus on more direct or niche themes:
+| Rank | Genre                        | Average Runtime |
+|------|------------------------------|-----------------|
+| 1    | Action, Sport                | 47 mins         |
+| 2    | Adventure, Comedy, Horror    | 52 mins         |
+| 3    | Documentary, News            | 52 mins         |
+
 
 ## Examination of Movie Duration (runtime_minutes)
 The runtime_minutes variable will be scrutinized to explore the correlation between movie duration and average rating, as well as the relationship between movie duration and sales across various markets.
@@ -356,6 +375,8 @@ See the full analysis in the Jupyter Notebook or review this presentation.
 ── README.md
 
 ── bom.movie_gross.csv
+
+__ im.zip
 
 ── movie_db_analysis.ipynb
 
