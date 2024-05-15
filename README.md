@@ -115,30 +115,7 @@ I will generate statistics that summarize the data concisely, and evaluate diffe
 | **Minimum**      | $10,800        |
 | **Maximum**      | $1,405,400,000 |
 
- ## Findings: Central Tendencies 
- ### runtime_minutes-
- Mean: 107.90 minutes
- Median (50th Percentile): 106 minutes
- Minimum: 3 minutes
- Maximum: 272 minutes
-### averagerating-
-Mean: 6.46, 
-Median (50th Percentile): 6.5, 
-Minimum: 1.6,  
-Maximum: 9.2
-### domestic_gross-
-Mean: $50,081,030, 
-Median (50th Percentile): $21,100,000, 
-Minimum: $400, 
-Maximum: $700,100,000
-### foreign_gross-
-Mean: $79,595,820, 
-Median (50th Percentile): $21,500,000, 
-Minimum: $600, Maximum: $946,400,000
-### global_sales-
-Mean: $129,676,800, 
-Median (50th Percentile): $48,400,000, 
-Minimum: $10,800, Maximum: $1,405,400,000
+ 
 # Analyzing the Data and Building Visualizations
  ## Market performance through the years: Groupby year
 Group the movies by year, organizing them based on global sales categories.
@@ -163,20 +140,6 @@ The analysis revealed the average ratings for each genre group. Notably, genres 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/46f1241b-4877-4d73-b790-ba786401ce1c)
 
 ### Findings
-Findings reveal that the genres emerged as the top global grossing genres are: 
-"Action, Adventure, Sci-Fi", 
-"Adventure, Animation, Comedy",
-"Action, Adventure, Fantasy" 
-
-Analysis comparing domestic and foreign sales by genre indicates that the top domestic sales were: 
-"Action, Adventure, Sci-Fi",
-"Adventure, Animation, Comedy",
-"Action, Adventure, Fantasy".
-
-Conversely, for foreign sales, the leading genres were:
-"Adventure, Animation, Comedy",
-"Action, Adventure, Sci-Fi",
-"Action, Adventure, Fantasy
 # Movie Genre Sales Analysis
 
 ## Top Grossing Genres Globally
@@ -216,7 +179,32 @@ The runtime_minutes variable will be scrutinized to explore the correlation betw
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/be12682f-baac-4221-b6b1-27c45e8d69c3)
 
 ### Findings 
-Among the various movie lengths observed, movies with a runtime of 59 minutes generated the highest  global gross sales $8.5B dollars. Analysis of movie runtimes across different markets reveals that a runtime of 59 minutes emerged as the top performer, leading both the domestic market with 3.5B dollars  and the foreign market with 5B dollars. Following closely in the domestic market were runtimes of 152 and 149 minutes, while in the foreign markets, they were 147 and 143 minutes.
+
+# Movie Runtime Sales Analysis
+
+## Overview
+Among the various movie lengths observed, movies with a runtime of **59 minutes** generated the highest global gross sales, amounting to **$8.5 billion**. This runtime was the top performer in both the domestic and foreign markets.
+
+## Top Performing Runtimes
+### Global Market
+| Runtime (minutes) | Global Sales |
+|--------------------|--------------|
+| 59                 | $8.5B        |
+
+### Domestic Market
+| Runtime (minutes) | Domestic Sales |
+|--------------------|----------------|
+| 59                 | $3.5B          |
+| 152                | $3.1B          |
+| 149                | $2.6B          |
+
+### Foreign Market
+| Runtime (minutes) | Foreign Sales  |
+|--------------------|----------------|
+| 59                 | $5B            |
+| 147                | $4.5B          |
+| 143                | $4.3B          |
+
 
 ### Visualize the relationship between the movie length and the global sales using scatter plots
     
@@ -231,6 +219,34 @@ Analysis of the average movie length and average ratings showed that movie lengt
 ### Visualize the relationship between the movie average rating and the movie sales
 
 ![image](https://github.com/durrantX/dsc-phase-2--project/assets/148919288/084f80bc-f654-4daa-a8db-9293836f1127)
+# Movie Financial Performance by Average Rating
+
+## Summary
+This analysis explores how the average rating of movies correlates with their financial performance across domestic, foreign, and global markets. Key findings indicate that higher ratings generally correspond to higher gross revenues, with specific peaks at certain ratings.
+
+## Domestic Gross
+- **Highest Gross at Rating 8.8**: $148.4 million.
+- **Trend**: As the average rating decreases, the domestic gross also decreases.
+
+## Foreign Gross
+- **Highest Gross at Rating 8.4**: $282.1 million.
+- **Trend**: Foreign gross remains relatively consistent across different ratings, with a peak at 8.4.
+
+## Global Sales
+- **Highest Global Sales at Rating 8.8**: $424.3 million.
+- **Trend**: Similar to domestic trends, global sales decrease as the average rating decreases.
+
+## Detailed Performance by Rating
+| Rating | Domestic Gross (million $) | Foreign Gross (million $) | Global Sales (million $) |
+|--------|---------------------------|--------------------------|-------------------------|
+| 8.8    | 148.4                     | N/A                      | 424.3                   |
+| 8.4    | N/A                       | 282.1                    | N/A                     |
+| Other  | Decreasing                | Consistent               | Decreasing              |
+
+### Note
+- "N/A" indicates that specific data points were not the highest or most notable and are not listed separately.
+- "Other" represents the general trend observed across other ratings not specified as peak performers.
+
     
 # Correlation Analysis
     
